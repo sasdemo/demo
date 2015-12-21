@@ -19,7 +19,7 @@ config(['$routeProvider', function($routeProvider) {
         templateUrl: 'partials/contact.html',
         controller: 'NavController'
       })
-      .otherwise({redirectTo: '/projects'});
+      .otherwise({redirectTo: '/about'});
 }]);
 
 myApp.controller('NavController', ['$scope', '$location', function($scope, $location) {
