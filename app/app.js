@@ -7,19 +7,28 @@ var myApp = angular.module('myApp', [
 config(['$routeProvider', function($routeProvider) {
 
   $routeProvider
-      .when('/projects', {
-        templateUrl: 'partials/projects.html',
-        controller: 'NavController'
+      .when('/home', {
+        templateUrl: 'partials/home.html'
+      })
+      .when('/products', {
+        templateUrl: 'partials/products.html'
+      })
+      .when('/demos', {
+        templateUrl: 'partials/demos.html'
+      })
+      .when('/docs', {
+          templateUrl: 'partials/docs.html'
       })
       .when('/about', {
-        templateUrl: 'partials/about.html',
-        controller: 'NavController'
+          templateUrl: 'partials/about.html'
       })
-      .when('/contact', {
-        templateUrl: 'partials/contact.html',
-        controller: 'NavController'
+      .when('/account', {
+          templateUrl: 'partials/account.html'
       })
-      .otherwise({redirectTo: '/about'});
+      .when('/register', {
+          templateUrl: 'partials/register.html'
+      })
+      .otherwise({redirectTo: '/home'});
 }]);
 
 myApp.controller('NavController', ['$scope', '$location', function($scope, $location) {

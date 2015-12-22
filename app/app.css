@@ -1,7 +1,33 @@
 /* app css stylesheet */
 
-html, body, iframe {
-  height: 100%;
-  overflow:hidden;
+/*html, body, iframe {*/
+  /*height: 100%;*/
+  /*overflow:hidden;*/
+/*}*/
+
+/* Nav */
+.nav-level-1, .nav-level-1 li a, .nav-level-1 li:hover a {
+    background-color: transparent !important;
+    background: transparent;
+    border-color: transparent;
+}
+
+.nav-level-1 li:hover a{
+    text-decoration: underline;
+}
+
+.nav-level-3 {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    border: 1px solid #e3e3e3;
+}
+
+.nav-level-4 {
+    border-radius: 4px;
+    border: 1px solid #e3e3e3;
+}
+
+.nav-level-5 {
+    list-style-type: none;
 }
 
