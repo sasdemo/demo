@@ -1,17 +1,31 @@
-<div class="container">
-    ABOUT VIEW
+<div class="container" ng-controller="NavController">
 
     <h3>Contact Us</h3>
 
     <p>Contact us with questions, comments, concerns, or feedback. We're always happy to work with you directly.</p>
 
-    Leave a message
+    <h4>Leave a message</h4>
+    <div ng-style="{'visibility': showConfirmation?'visible':'hidden'}" class="alert alert-success">
+        <strong> Message has been send!</strong>
+    </div>
 
-    Check out our FAQ, Documentation, and System Status
-
-    Your Name
-    Email Address
-    Message
-
-    <button>Send</button>
+    <div class="row">
+        <div class="col-md-6">
+            <form name="frontCtrl.contactForm" ng-submit="formSubmit()">
+                <fieldset class="form-group">
+                    <label for="contactName">Your Name</label>
+                    <input ng-model="frontCtrl.comment.name" name="name" type="text" class="form-control" id="contactName" placeholder="Enter Your Name" ng-required>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="contactMail">Email Address</label>
+                    <input ng-model="frontCtrl.comment.email" name="email" type="email" class="form-control" id="contactMail" placeholder="Enter Email Address" ng-required>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="contactMsg">Message</label>
+                    <textarea ng-model="frontCtrl.comment.msg" name="msg" class="form-control" id="contactMsg" rows="3" ng-required></textarea>
+                </fieldset>
+                <button type="submit" class="btn btn-primary" >Submit</button>
+            </form>
+        </div>
+    </div>
 </div>
