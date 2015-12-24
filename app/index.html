@@ -16,10 +16,9 @@
   <link rel="stylesheet" href="app.css">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
-<body>
-<div class="container" ng-controller="FrontController as frontCtrl">
+<body ng-controller="FrontController as frontCtrl">
     <!-- navigation -->
-    <nav ng-include="'nav/nav.html'"></nav>
+    <div ng-include="'nav/nav.html'" ng-controller="NavController"></div>
 
     <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -43,6 +42,5 @@
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="app.js"></script>
-</div>
 </body>
 </html>

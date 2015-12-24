@@ -1,25 +1,29 @@
-<nav class="container" style="margin-left: -15px;" ng-controller="NavController">
-    <div class="row">
-        <ul class="nav navbar-nav navbar-right nav-level-1">
-            <li><a href="#/home">Home</a></li>
-            <li><a href="#/about">Contact Us</a></li>
-            <li><a href="#/contact">My Account</a></li>
-        </ul>
-    </div>
-    <div class="row nav-level-2">
-        <div class="well">
-            <h1>Kells Wells - New Analytics Way</h1>
+<nav>
+    <div class="row header-wrapper-level-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 logo-container">
+                    <img src="img/logo.png">
+                    <h1>digiProp - Lets decide together</h1>
+                </div>
+                <ul class="nav navbar-nav navbar-right nav-level-1">
+                    <li><a href="#/register">Sign up</a></li>
+                    <li><a href="#/account">Log in</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-    <div class="row">
-        <ul class="nav nav-navbar nav-justified nav-level-3">
-            <li><a href="#/home">Home</a></li>
-            <li><a href="#/products">Products/Offerings</a></li>
-            <li><a href="#/demos">Demos</a></li>
-            <li><a href="#/docs">Docs</a></li>
-            <li><a href="#/about">About Us</a></li>
-            <li ><a class="bg-danger" href="#/account">My Account</a></li>
-            <li ><a class="bg-danger" href="#/register">Register</a></li>
-        </ul>
+    <div class="row header-wrapper-level-2">
+        <div class="container">
+            <ul class="nav nav-navbar nav-justified nav-level-3">
+                <li ng-class="navClass('home')"><a href="#/home">Home</a></li>
+                <li ng-class="navClass('products')"><a href="#/products">Products/Offerings</a></li>
+                <li ng-class="navClass('demos')"><a href="#/demos">Demos</a></li>
+                <li ng-class="navClass('docs')"><a href="#/docs">Docs</a></li>
+                <li ng-class="navClass('contact')"><a href="#/contact">Contact Us</a></li>
+                <li ng-class="navClass('account')"><a href="#/account">My Account</a></li>
+                <li ng-class="navClass('support')"><a href="#/support">Support</a></li>
+            </ul>
+        </div>
     </div>
 </nav>

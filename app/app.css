@@ -1,11 +1,42 @@
 /* app css stylesheet */
 
-/*html, body, iframe {*/
-  /*height: 100%;*/
-  /*overflow:hidden;*/
-/*}*/
+body{
+    /*TODO background-color: #FBFAF5;*/
+    overflow-x: hidden;
+}
 
 /* Nav */
+
+.header-wrapper-level-1{
+    background-color: #C70012;
+}
+
+.header-wrapper-level-2{
+    background-color: #B1000E;
+}
+
+.header-wrapper-level-1 a,.header-wrapper-level-2 a  {
+    color: white;
+}
+
+.logo-container{
+    padding: 20px;
+    color: white;
+}
+
+.logo-container img{
+    display: inline-block;
+}
+
+.logo-container h1{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-level-1{
+    margin-right: 10px;
+}
+
 .nav-level-1, .nav-level-1 li a, .nav-level-1 li:hover a {
     background-color: transparent !important;
     background: transparent;
@@ -16,11 +47,26 @@
     text-decoration: underline;
 }
 
-.nav-level-3 {
-    background-color: #f5f5f5;
-    border-radius: 4px;
-    border: 1px solid #e3e3e3;
+.header-wrapper-level-2 .active a {
+    background-color: white !important;
+    color: red;
 }
+
+/* Footer */
+.footer-wrapper-level-1{
+    padding: 20px 0 20px 0;
+    border-top: solid 2px #f5f5f5;
+    background-color: #FAFAFA;
+}
+
+.footer-wrapper-level-2{
+    border-top: 1px solid #eee;
+    font-weight: 400;
+    line-height: 50px;
+    background-color: #F5F5F5;
+}
+
+
 
 .nav-level-4 {
     border-radius: 4px;
@@ -30,4 +76,33 @@
 .nav-level-5 {
     list-style-type: none;
 }
+
+/* page */
+.c-page {
+    margin-bottom: 10px;
+    padding: 10px;
+    min-height: 53vh;
+    -webkit-box-shadow: 0 0 6px #ccc;
+    -moz-box-shadow:    0 0 6px #ccc;
+    box-shadow:         0 0 6px #ccc;
+}
+
+.home-icon {
+    float: left;
+    width: 35vh;
+}
+
+.c-page p {
+    text-align: justify;
+}
+
+.c-page-header{
+    margin-top: 10px;
+    line-height: 50px;
+    background-color: #9C000C;
+    color: white;
+    font-size: 2em;
+    padding-left: 10px;
+}
+
 

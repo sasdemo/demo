@@ -1,6 +1,6 @@
 'use strict';
 
-//(function(){
+(function(){
     // Declare app level module which depends on views, and components
     var myApp = angular.module('myApp', [
       'ngRoute'
@@ -20,8 +20,8 @@
           .when('/docs', {
               templateUrl: 'partials/docs.html'
           })
-          .when('/about', {
-              templateUrl: 'partials/about.html'
+          .when('/contact', {
+              templateUrl: 'partials/contact.html'
           })
           .when('/account', {
               templateUrl: 'partials/account.html'
@@ -29,12 +29,31 @@
           .when('/register', {
               templateUrl: 'partials/register.html'
           })
+          .when('/support', {
+              templateUrl: 'partials/support.html'
+          })
+          .when('/getting-started', {
+              templateUrl: 'partials/getting-started.html'
+          })
+          .when('/faq', {
+              templateUrl: 'partials/faq.html'
+          })
+          .when('/training', {
+              templateUrl: 'partials/training.html'
+          })
+          .when('/basic', {
+              templateUrl: 'partials/basic.html'
+          })
+          .when('/login', {
+              templateUrl: 'partials/login.html'
+          })
           .otherwise({redirectTo: '/home'});
     }]);
 
     myApp.controller('NavController', ['$scope', '$location', function($scope, $location) {
         $scope.navClass = function (page) {
           var currentRoute = $location.path().substring(1) || 'projects';
+          console.log("navclass: "+ (page === currentRoute ? 'active' : ''))
           return page === currentRoute ? 'active' : '';
         };
     }]);
@@ -79,5 +98,5 @@
             }, 5000);
         }
     }]);
-//})();
+})();
 
